@@ -10,6 +10,10 @@
 	<div class="top-bar-left float-left">
 		<ul class="menu">
 			<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Post</a></li>
+			<li><a href="#">Dummy-Button</a></li>
 		</ul>
 	</div>
 	<div class="top-bar-right show-for-medium">
