@@ -8,8 +8,16 @@
 
 <div class="top-bar" id="top-bar-menu">
 	<div class="top-bar-left float-left">
-		<ul class="menu">
-			<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>
+		<ul class="menu" id="nav_menu">
+			<?php 
+				$custom_logo_id = get_theme_mod( 'custom_logo' );
+				$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+				if ( has_custom_logo() ) {
+						echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+				} else {
+						echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+				} 
+			?>
 		</ul>
 	</div>
 	<div class="top-bar-right show-for-medium">

@@ -31,7 +31,6 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 		<?php wp_head(); ?>
-
 	</head>
 			
 	<body <?php body_class(); ?>>
@@ -50,3 +49,6 @@
 					 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
 	 	
 				</header> <!-- end .header -->
+			</div>
+		</div>
+	</body>
