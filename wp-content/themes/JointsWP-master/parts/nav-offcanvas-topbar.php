@@ -8,7 +8,7 @@
 
 <div class="top-bar" id="top-bar-menu">
 	<div class="top-bar-left float-left">
-		<ul class="menu" id="nav_menu">
+		<ul class="menu" id="topbar-nav-icon">
 			<?php 
 				$custom_logo_id = get_theme_mod( 'custom_logo' );
 				$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -24,7 +24,7 @@
 		<?php joints_top_nav(); ?>	
 	</div>
 	<div class="top-bar-right float-right show-for-small-only">
-		<ul class="menu">
+		<ul class="menu" id="topbar-nav-buttons">
 			<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
 			<li><a data-toggle="off-canvas"><?php _e( 'Menu', 'jointswp' ); ?></a></li>
 		</ul>

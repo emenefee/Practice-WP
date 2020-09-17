@@ -1,6 +1,21 @@
-$bgcolor: blue;
+//NOTES:
+//  Any specific menu requires an ID to style past the default styling of _settings.scss
+$outside-padding: 5%;
 
-menu{
-    background-color: $bgcolor;
-    font-family: 'Times New Roman', Times, serif;
+.top-bar{
+    background-color: white;
+    padding: 1rem;
+    //font-family: 'Times New Roman', Times, serif;
+}
+
+#topbar-nav-icon, #topbar-nav-buttons{ 
+    padding: 2rem;
+}
+
+.top-bar-left {
+    padding-left: $outside-padding;
+}
+
+.top-bar-right{
+    padding-right: $outside-padding;
 }
