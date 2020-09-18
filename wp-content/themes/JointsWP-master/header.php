@@ -35,6 +35,10 @@
 			
 	<body <?php body_class(); ?>>
 
+		<div class="announcement-bar">
+			<?php echo "hello" ?>
+		</div>
+		
 		<div class="off-canvas-wrapper">
 			
 			<!-- Load off-canvas container. Feel free to remove if not using. -->			
