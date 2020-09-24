@@ -36,7 +36,11 @@
 	<body <?php body_class(); ?>>
 
 		<div class="announcement-bar">
-			<?php echo "hello" ?>
+			<?php $announcement = get_field('announcement_button', 'options');
+			if ($announcement) { ?>
+				<button type="button" class="button" id='announcement-button' onClick="alert('Announce')"> Announcement </button>
+				<?php echo get_field('announcement_text', 'options'); }
+			else {} ?>
 		</div>
 		
 		<div class="off-canvas-wrapper">
