@@ -8,7 +8,8 @@ $outside-padding: 5%;
 $spacing: 1rem;
 
 // Announcement Bar
-$announcement-button-color: pink;
+$announcement-button-color: #f70207;
+$font-stack: Georgia, serif, bold;
 
 // Top Bar
 .top-bar{
@@ -36,6 +37,7 @@ $announcement-button-color: pink;
 #announcement-button{
     border-radius: 70px;
     background-color: $announcement-button-color;
-    color: $black;
+    color: $white;
     font-weight: bold;
+    font:$font-stack;
 }
