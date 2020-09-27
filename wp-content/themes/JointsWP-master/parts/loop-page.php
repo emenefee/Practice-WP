@@ -9,15 +9,7 @@
 	<header class="article-header">
 		<h1 class="page-title"><?php the_title(); ?></h1>
 	</header> <!-- end article header -->
-
-	<!-- Displaying ACF fields -->
-	<?php 
-		$bool = get_field('announcement_button');
-		if ($bool) {
-			echo "Hello";
-		}
-	?>
-					
+			
     <section class="entry-content" itemprop="text">
 	    <?php the_content(); ?>
 	</section> <!-- end article section -->

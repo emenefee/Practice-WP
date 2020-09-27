@@ -1,15 +1,20 @@
-//NOTES:
-//  Any specific menu requires an ID to style past the default styling of _settings.scss
+// Used for header navigaion bar(s)
+// Colors
+$white: white;
+$black: black;
+
+// Top Bar
 $outside-padding: 5%;
+$spacing: 1rem;
 
+// Announcement Bar
+$announcement-button-color: pink;
+
+// Top Bar
 .top-bar{
-    background-color: white;
-    padding: 1rem;
+    background-color: $white;
+    padding-bottom: $spacing;
     //font-family: 'Times New Roman', Times, serif;
-}
-
-#topbar-nav-icon, #topbar-nav-buttons{ 
-    padding: 2rem;
 }
 
 .top-bar-left {
@@ -18,4 +23,19 @@ $outside-padding: 5%;
 
 .top-bar-right{
     padding-right: $outside-padding;
+}
+
+//Announcement Bar
+.announcement-bar{
+    text-align: center;
+    background-color: black;
+    padding-top: $spacing;
+    color: $white;
+}
+
+#announcement-button{
+    border-radius: 70px;
+    background-color: $announcement-button-color;
+    color: $black;
+    font-weight: bold;
 }
