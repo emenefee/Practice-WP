@@ -76,3 +76,45 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 }
+
+// Creating (new) block types
+add_action('acf/init', 'my_acf_init');
+function my_acf_init() {
+	
+	// Check function exists
+	if( function_exists('acf_register_block') ) {
+		
+		// Register a support
+		acf_register_block_type(array(
+			'name'				=> 'support-us',
+			'title'				=> __('Support Us'),
+			'description'		=> __('A custom suport block.'),
+			'render_template'	=> 'parts/blocks/support-us.php',
+			// 'category'			=> 'formatting',
+			'icon'				=> 'universal-access',
+			'keywords'			=> array( 'support', 'us' ),
+		));
+
+		// // EDIT TO BE A STATEMENT
+		// acf_register_block(array(
+		// 	'name'				=> 'covid19',
+		// 	'title'				=> __('Covid-19'),
+		// 	'description'		=> __('A custom safety infomaion block.'),
+		// 	'render_callback'	=> 'my_acf_block_render_callback',
+		// 	// 'category'			=> 'formatting',
+		// 	'icon'				=> 'warning',
+		// 	'keywords'			=> array( 'safe', 'safety', 'information', 'covid19', 'covid-19', ),
+		// ));
+
+		// Register a products
+		acf_register_block_type(array(
+			'name'				=> 'product',
+			'title'				=> __('Products'),
+			'description'		=> __('A custom product block.'),
+			'render_template'	=> 'parts/blocks/product.php', //'render_callback'	=> 'my_acf_block_render_callback',
+			// 'category'			=> 'formatting',
+			'icon'				=> 'cart',
+			'keywords'			=> array( 'product', 'shop', 'products' ),
+		));
+	}
+}
